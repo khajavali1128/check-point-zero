@@ -1,1 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckPointZero</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
 
+        body {
+            background-image: linear-gradient(to right, royalblue, lightblue);
+        }
+        
+        body.blur-background {
+            filter: blur(5px);
+        }
+
+        .card {
+            cursor: pointer;
+        }
+
+        .card-body {
+            display: none;
+        }
+
+        .accordion-button.collapsed {
+            background-color: #f8f9fa;
+        }
+
+        .accordion-button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        .header {
+            background: none;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to CheckPointZero</h1>
+        <p>A platform designed to help you focus on learning from top industry professionals, giving you clear, actionable roadmaps for your career growth.</p>
+    </div>
+
+    <!-- Profile Cards Section -->
+    <div class="row" id="row1">
+        <!-- Profile Card 1 : Sahil-->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/C5603AQGo7vmLHtq8Lw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1626677360609?e=1736985600&v=beta&t=5IH5mAZcwcLOPyKk4PsG4_N0sJnEPUQyyCbsg_dDF0M" class="card-img-top" alt="John Doe">
+                <div class="card-body">
+                    <h5 class="card-title">Sahil</h5>
+                    <p class="card-text">Software Engineer at Google</p>
+                    <div class="accordion" id="accordion1">
+                        <div class="card">
+                            <div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion1">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> John has worked in top tech companies...</p>
+                                    <p><strong>Education:</strong> IIT Delhi, India</p>
+                                    <p><strong>Roadmap:</strong> Started as a web developer, moved into backend architecture...</p>
+                                    <ul>
+                                        <li>Course 1</li>
+                                        <li>Course 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for other profiles (Profile Card 2, Profile Card 3, etc.) -->
+
+        <!-- Profile Card 2 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQGFTnOaQa4fUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1623400654607?e=1736985600&v=beta&t=xkYOGV-dm7pYq0yM5mCZcTJZrufGkCAj8tKc85lFQuI" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEN3LSae_erIA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726296146828?e=1736985600&v=beta&t=eUVlkxZOJE4BwDcmxLriit_Rnfkm7gBBH0uuJfM5i7o" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Card 4 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEeeZOxRgzOlw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684091122261?e=1736985600&v=beta&t=BGO8J7oRpcY1_AWx34sZprwqRjiBXaoXsrRGv_0Jq1M" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row2">
+        <!-- Profile Card 5 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://pbs.twimg.com/profile_images/1011750442135678976/pjQtLPdD_400x400.jpg" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Card 6 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEeeZOxRgzOlw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684091122261?e=1736985600&v=beta&t=BGO8J7oRpcY1_AWx34sZprwqRjiBXaoXsrRGv_0Jq1M" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Card 7 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHjHadGix0ecQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1687882914058?e=1736985600&v=beta&t=nzllG5OFLc_4W-5yz8pz4bLoo-VLtGgoHX3WCKjTt2I" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <!-- Profile Card 8 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHjDLBuerHKig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672233980549?e=1736985600&v=beta&t=uzuYIxJTVcpViHa1Xz6HHo-Z0JuPuQhyliykECaccpY" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="row3">
+        <!-- Profile Card 9 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEeeZOxRgzOlw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684091122261?e=1736985600&v=beta&t=BGO8J7oRpcY1_AWx34sZprwqRjiBXaoXsrRGv_0Jq1M" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Card 10 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEeeZOxRgzOlw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684091122261?e=1736985600&v=beta&t=BGO8J7oRpcY1_AWx34sZprwqRjiBXaoXsrRGv_0Jq1M" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Card 11 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEeeZOxRgzOlw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684091122261?e=1736985600&v=beta&t=BGO8J7oRpcY1_AWx34sZprwqRjiBXaoXsrRGv_0Jq1M" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Profile Card 12 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/C5603AQFbOqG9og1S5g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517251238442?e=1736985600&v=beta&t=obw-y21LX8SwO3sxVfReDVY97v8xIrTnTYr_IitqvwI" class="card-img-top" alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Tech YouTuber & Data Scientist</p>
+                    <div class="accordion" id="accordion2">
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed accordion-button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        View Details
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    <p><strong>Bio:</strong> Jane shares her journey from data analyst to a data scientist...</p>
+                                    <p><strong>Education:</strong> Stanford - Data Science</p>
+                                    <p><strong>Roadmap:</strong> Started on Udemy courses, now works with top-tier firms...</p>
+                                    <ul>
+                                        <li>Course 3</li>
+                                        <li>Course 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Handle accordion opening and closing with blur effect
+    $('.accordion-button').on('click', function() {
+        if ($(this).hasClass('collapsed')) {
+            $('body').addClass('blur-background');
+        } else {
+            $('body').removeClass('blur-background');
+        }
+    });
+</script>
+</body>
+</html>
